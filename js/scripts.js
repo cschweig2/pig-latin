@@ -1,9 +1,35 @@
 function pigLatin(userInput) {
-  const splitUserInput = userInput.split(' ');
+  let splitUserInput = userInput.split(' ');
   console.log(splitUserInput);
 }
 
+function pigLatin(userInput) {
+  let splitUserInput = userInput.split(' ');
+  console.log(splitUserInput);
+  for (let i = 0; i < splitUserInput.length; i++) {
+    for (let j = 0; j < splitUserInput[i].length; j++) {
+      console.log(splitUserInput[i][0]);
+    }
+  }
+}
 
+
+
+
+function pigLatin(userInput) {
+    let newOutput = "";
+    let vowels = ['a','e','i','o','u']
+
+  if (userInput.match(vowels)) {
+    newOutput = userInput + "way";
+  } else {
+  return userInput;
+  }
+}
+
+
+
+// splitUserInput[i][0].match(/[aeiou]/g)
 
 
 
@@ -32,5 +58,15 @@ function pigLatin(userInput) {
 // Expect(pigLatin(userInput)).toEqual(true);
 
 // if (the first word starts with a vowel || there are other words that start with vowels {
-  //   add these letters to (userinput.match...true)
+//     add these letters to (userinput.match...true)
 //  }
+
+
+// for (let i = 0; i < splitUserInput.length; i++) {
+//    for (let j = 0; j < splitUserInput[i][j]; j++) {
+//      if (splitUserInput[i][j] is a vowel) {
+ //         add "way"
+//      } else if (splitUserInput[i][j] is a cons {
+  //        move all first consecutive consonants to the end and add "ay"
+// }
+//}
