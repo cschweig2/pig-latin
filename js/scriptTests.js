@@ -3,4 +3,4 @@
 // Expect: (pigLatin("a")).toEqual("away");
 
 // Test: "Successfully select words that begin with a vowel"
-// Expect:
+// Expect:  
