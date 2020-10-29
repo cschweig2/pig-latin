@@ -7,41 +7,33 @@ function pigLatin(userInput) {
   let splitUserInput = userInput.split(' ');
   console.log(splitUserInput);
   for (let i = 0; i < splitUserInput.length; i++) {
-    for (let j = 0; j < splitUserInput[i].length; j++) {
       console.log(splitUserInput[i][0]);
     }
   }
-}
+
 
 function pigLatin(userInput) {
   let splitUserInput = userInput.split(' ');
   console.log(splitUserInput);
   for (let i = 0; i < splitUserInput.length; i++) {
-    for (let j = 0; j < splitUserInput[i].length; j++) {
-      if (splitUserInput[i][0].match(/\b[aeiou]*/g)) {
+      if (splitUserInput[i][0].match(/[aeiou]/gi)) {
         console.log(splitUserInput[i].concat("way"));
       }
     }
   }
-}
 
 
-array = ["Are, "you"];
-array = [0][0];
-array = [0][1];
+// function pigLatin(userInput) {
+//     let newOutput = "";
+//     let vowels = ['a','e','i','o','u']
 
-
-function pigLatin(userInput) {
-    let newOutput = "";
-    let vowels = ['a','e','i','o','u']
-
-  if (userInput.match(vowels)) {
-    newOutput = userInput + "way";
-    return newOutput;
-  } else {
-  return userInput;
-  }
-}
+//   if (userInput.match(vowels)) {
+//     newOutput = userInput + "way";
+//     return newOutput;
+//   } else {
+//   return userInput;
+//   }
+// }
 
 
 
