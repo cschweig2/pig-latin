@@ -13,7 +13,22 @@ function pigLatin(userInput) {
   }
 }
 
+function pigLatin(userInput) {
+  let splitUserInput = userInput.split(' ');
+  console.log(splitUserInput);
+  for (let i = 0; i < splitUserInput.length; i++) {
+    for (let j = 0; j < splitUserInput[i].length; j++) {
+      if (splitUserInput[i][0].match(/\b[aeiou]*/g)) {
+        console.log(splitUserInput[i].concat("way"));
+      }
+    }
+  }
+}
 
+
+array = ["Are, "you"];
+array = [0][0];
+array = [0][1];
 
 
 function pigLatin(userInput) {
@@ -22,6 +37,7 @@ function pigLatin(userInput) {
 
   if (userInput.match(vowels)) {
     newOutput = userInput + "way";
+    return newOutput;
   } else {
   return userInput;
   }
